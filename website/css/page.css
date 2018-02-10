@@ -1,0 +1,287 @@
+@media print {
+    body {
+        -webkit-print-color-adjust: exact;
+    }
+    .page {
+        width: 21cm;
+        /*used for pdf export*/
+        height: 29.7cm;
+        margin: auto;
+        font-family: "Lato", sans-serif;
+        font-size: 0.9em;
+    }
+    .main {
+        width: 66%;
+        margin: auto;
+    }
+    .sidebar {
+        width: 33%;
+        border-left: 1px solid lightgrey;
+    }
+    .details_mobile {
+        display: none;
+    }
+    #profile_img {
+        width: 80px;
+        height: 75px;
+        position: relative;
+        border: 2px solid white;
+        -webkit-border-radius: 50px;
+        -moz-border-radius: 50px;
+        border-radius: 50px;
+        overflow: hidden;
+        float: left;
+        vertical-align: middle;
+    }
+    .toTopButton {
+        display: none !important;
+    }
+}
+
+@media only screen and (min-width: 750px) {
+    .page {
+        width: 21cm;
+        /*used for pdf export*/
+        height: 29.7cm;
+        margin: auto;
+        font-family: "Lato", sans-serif;
+        font-size: 0.9em;
+    }
+    .main {
+        width: 66%;
+        margin: auto;
+    }
+    .sidebar {
+        width: 33%;
+        border-left: 1px solid lightgrey;
+    }
+    .details_mobile {
+        display: none;
+    }
+    #profile_img {
+        width: 80px;
+        height: 75px;
+        position: relative;
+        border: 2px solid white;
+        -webkit-border-radius: 50px;
+        -moz-border-radius: 50px;
+        border-radius: 50px;
+        overflow: hidden;
+        float: left;
+        vertical-align: middle;
+    }
+    .toTopButton {
+        display: none !important;
+    }
+}
+
+@media only screen and (max-width: 750px) {
+    .page {
+        width: 100%;
+        display: inline-block;
+        margin: auto;
+        font-family: "Lato", sans-serif;
+        font-size: 0.9em;
+    }
+    .main {
+        width: 100%;
+    }
+    .sidebar {
+        width: 100%;
+        padding-top: 0px !important;
+    }
+    #profile_img {
+        display: none;
+    }
+    .details {
+        display: none;
+    }
+}
+
+h1 {
+    margin: 0px;
+}
+
+h3 {
+    margin: 0px;
+    color: #006666;
+}
+
+h4 {
+    margin: 0px;
+}
+
+ul {
+    margin: 0px;
+    padding-left: 20px;
+    list-style-type: circle;
+}
+
+i {
+    padding-right: 7px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+#profile_desc {
+    width: auto;
+    float: left;
+    padding-left: 10px;
+    vertical-align: middle;
+}
+
+#toTopButton {
+    display: none;
+    position: fixed;
+    bottom: 25px;
+    right: 15px;
+    z-index: 99;
+    border: none;
+    outline: none;
+    opacity: 0.75;
+    color: black;
+    cursor: pointer;
+    border-radius: 50%;
+    height: 45px;
+    width: 45px;
+    padding: 0px;
+    background-color: #006666;
+}
+
+#toTopButton:hover {
+    opacity: 0.85;
+}
+
+#download_button {
+    position: fixed;
+    top: 25px;
+    right: 15px;
+    z-index: 99;
+    border: none;
+    outline: none;
+    opacity: 0.75;
+    color: black;
+    cursor: pointer;
+    display: block;
+    border-radius: 50%;
+    height: 60px;
+    width: 60px;
+    padding: 0px;
+    background-color: #006666;
+}
+
+#download_button:hover {
+    opacity: 0.85;
+}
+
+.container {
+    height: 100%;
+    float: left;
+    padding-top: 25px;
+}
+
+.profile_pic {
+    display: block;
+    margin: 0 auto;
+    height: auto;
+    -webkit-filter: grayscale(100%);
+    /* Safari 6.0 - 9.0 */
+    filter: grayscale(100%);
+    width: 100%;
+}
+
+.section {
+    width: 80%;
+    float: left;
+    padding-top: 25px;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+.section-indent-content {
+    padding-left: 25px;
+    border-left: 1px solid lightgrey;
+}
+
+.section_content_padding {
+    margin-top: 10px;
+}
+
+.highlight {
+    color: #006666;
+    font-weight: bold;
+}
+
+.section-content-block {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+/* Rules for sizing the icon. */
+
+.material-icons.md-18 {
+    font-size: 18px;
+    position: relative;
+    top: 3px;
+    padding-right: 10px;
+}
+
+.material-icons.md-dark {
+    color: rgba(0, 0, 0, 0.54);
+}
+
+.material-icons.md-light {
+    color: rgba(255, 255, 255, 1);
+}
+
+.icon {
+    padding-right: 7px;
+    width: 15px;
+}
+
+.footer {
+    height: 75px;
+    width: 100%;
+    margin-top: 25px;
+    overflow: hidden;
+}
+
+.linkedin_logo {
+    height: 18px;
+    -webkit-filter: grayscale(100%);
+    /* Safari 6.0 - 9.0 */
+    filter: grayscale(100%);
+    vertical-align: bottom;
+}
+
+.linkedin_logo:hover {
+    -webkit-filter: none;
+    /* Safari 6.0 - 9.0 */
+    filter: none;
+}
+
+.footer_container {
+    padding: 20px;
+    margin: auto;
+    text-align: center;
+    font-size: 0.75em;
+}
+
+.copyright {
+    padding-left: 10px;
+}
+
+.progress_container {
+    height: 5px;
+    background-color: lightgrey;
+    margin: 5px;
+    width: 70%;
+}
+
+.progress {
+    height: 5px;
+    background-color: #006666;
+}

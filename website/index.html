@@ -1,0 +1,398 @@
+<!doctype html>
+<html class="no-js" lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Ramsay Shiells</title>
+    <meta name="description" content="Ramsay Shiells's Curriculum Vitae">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--<link rel="apple-touch-icon" href="apple-touch-icon.png">-->
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
+    <link rel="stylesheet" href="css/font-mfizz/font-mfizz.css">
+    <link rel="stylesheet" href="css/normalize.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/page.css">
+
+    <script src="js/vendor/modernizr-2.8.3.min.js"></script>
+
+    <!-- Global Site Tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-31896390-1"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+
+function gtag() {
+    dataLayer.push(arguments);
+}
+gtag("js", new Date());
+gtag("config", "UA-31896390-1");
+
+window.onscroll = function() {
+    scrollFunction();
+};
+
+function scrollFunction() {
+    if (
+        document.body.scrollTop > 200 ||
+        document.documentElement.scrollTop > 200
+    ) {
+        document.getElementById("toTopButton").style.display = "block";
+    } else {
+        document.getElementById("toTopButton").style.display = "none";
+    }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction(scrollDuration) {
+    var cosParameter = window.scrollY / 2,
+        scrollCount = 0,
+        oldTimestamp = performance.now();
+
+    function step(newTimestamp) {
+        scrollCount +=
+            Math.PI / (scrollDuration / (newTimestamp - oldTimestamp));
+        if (scrollCount >= Math.PI) window.scrollTo(0, 0);
+        if (window.scrollY === 0) return;
+        window.scrollTo(
+            0,
+            Math.round(cosParameter + cosParameter * Math.cos(scrollCount))
+        );
+        oldTimestamp = newTimestamp;
+        window.requestAnimationFrame(step);
+    }
+    window.requestAnimationFrame(step);
+}
+</script>
+
+
+
+</head>
+
+<body>
+    <!--[if lt IE 8]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+    <div class="page">
+        <div class="container main">
+            <div class="section">
+                <div id="profile_img">
+                    <img src="img/profile_pic.png" class="profile_pic" alt="profile pic" />
+                </div>
+                <div id="profile_desc">
+                    <h1>Ramsay Shiells</h1>
+                    <div class="highlight">
+                        <i class="material-icons md-18">work</i>Software Developer
+                    </div>
+                    <div>
+                        <i class="material-icons md-18">location_on</i>Inverurie, Scotland
+                    </div>
+                    <div class="details_mobile">
+                        <div>
+                            <i class="material-icons md-18">cake</i>13-02-1988
+                        </div>
+                        <div>
+                            <i class="material-icons md-18">link</i>www.ramsayshiells.info
+                        </div>
+                        <div>
+                            <i class="material-icons md-18">email</i><a href="mailto:ramsayshiells@me.com" target="_top">ramsayshiells@me.com</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="section">
+                <h3>Profile</h3>
+                <div class="section-indent-content section_content_padding">
+                    <div>
+                        Software Developer with 5+ years of experience. Passionate about learning and exploring new technologies and I believe in producing clear and concise code in well structured applications. I also like cooking, gaming, playing the guitar, skiing and running.
+                    </div>
+                </div>
+            </div>
+            <div class="section">
+                <h3>Experience</h3>
+                <div class="section-indent-content">
+                    <div class="section-content-block">
+                        <h4>Software Developer - Evolve Ltd</h4>
+                        <div class="highlight">March 2014 - Present</div>
+                        <ul>
+                            <li>Designing, implementing and testing features in existing and new applications</li>
+                            <li>Maintaining and fixing bugs in historical applications</li>
+                            <li>Producing documentation</li>
+                            <li>Creating releases</li>
+                            <li>Supporting and mentoring Graduate Software Developers</li>
+                        </ul>
+                    </div>
+                    <div class="section-content-block">
+                        <h4>Graduate Software Developer - Evolve Ltd</h4>
+                        <div class="highlight">September 2012 - March 2014</div>
+                        <ul>
+                            <li>Designing, implementing and testing features in existing applications</li>
+                            <li>Maintaining and fixing bugs in historical applications</li>
+                            <li>Customer Support and Operational Support</li>
+                        </ul>
+                    </div>
+                    <div class="section-content-block">
+                        <h4>Ski Instructor & Attendant - Alford Ski Centre</h4>
+                        <div class="highlight">August 2004 - May 2015</div>
+                        <ul>
+                            <li>Instructing children and adults from beginner to expert level</li>
+                            <li>Maintenance of the dry ski slope and equipment</li>
+                            <li>Taking bookings and payments</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="section">
+                <h3>Education</h3>
+                <div class="section-indent-content">
+                    <div class="section-content-block">
+                        <h4>MSc Cloud Computing - Aberdeen University</h4>
+                        <div class="highlight">September 2011 - September 2012</div>
+                        <div>
+                            "Creating, Publishing and Visualising Data for the Semantic Web" MSc Project in collaboration with IBM
+                        </div>
+                    </div>
+                    <div class="section-content-block">
+                        <h4>BSc Hons Computing Science - Aberdeen University</h4>
+                        <div class="highlight">September 2008 - September 2011</div>
+                        <div>
+                            "Making Linked Data Accessible" Honours Project in collaboration with Aberdeen City Council
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="section">
+                <h3>Projects</h3>
+                <div class="section-indent-content">
+                    <div class="section-content-block">
+                        <h4>Android App - Grampian Transport Museum</h4>
+                        <div class="highlight">January 2017 - March 2017</div>
+                        <div>
+                            Application used to supplement exhibits with images and videos
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container sidebar">
+            <div class="section details">
+                <h3>Details</h3>
+                <div class="section_content_padding">
+                    <div>
+                        <i class="material-icons md-18">cake</i>13-02-1988
+                    </div>
+                    <div>
+                        <i class="material-icons md-18">link</i>www.ramsayshiells.info
+                    </div>
+                    <div>
+                        <i class="material-icons md-18">email</i><a href="mailto:ramsayshiells@me.com" target="_top">ramsayshiells@me.com</a>
+                    </div>
+                </div>
+            </div>
+            <div class="section">
+                <h3>Programming Languages</h3>
+                <div class="section_content_padding">
+                    <div>
+                        <i class="devicon-java-plain"></i>Java
+                        <div class="progress_container">
+                            <div class="progress" style="width:90%;">
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <i class="devicon-javascript-plain"></i>Javascript
+                        <div class="progress_container">
+                            <div class="progress" style="width:90%;">
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <i class="devicon-html5-plain"></i>HTML
+                        <div class="progress_container">
+                            <div class="progress" style="width:90%;">
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <i class="icon-database"></i>SQL
+                        <div class="progress_container">
+                            <div class="progress" style="width:80%;">
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <i class="devicon-css3-plain"></i>CSS
+                        <div class="progress_container">
+                            <div class="progress" style="width:70%;">
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <i class="icon-database"></i>RDF
+                        <div class="progress_container">
+                            <div class="progress" style="width:60%;">
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <i class="devicon-php-plain"></i>PHP
+                        <div class="progress_container">
+                            <div class="progress" style="width:50%;">
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <i class="devicon-csharp-plain"></i>C#
+                        <div class="progress_container">
+                            <div class="progress" style="width:50%;">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="section">
+                <h3>Frameworks</h3>
+                <div class="section_content_padding">
+                    <div>
+                        <img src="img/icons/alfresco.png" class="icon" alt="alfresco icon" />Alfresco
+                        <div class="progress_container">
+                            <div class="progress" style="width:90%;">
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <i class="icon-spring"></i>Spring
+                        <div class="progress_container">
+                            <div class="progress" style="width:75%;">
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <img src="img/icons/dojo.png" class="icon" alt="dojo icon" />Dojo
+                        <div class="progress_container">
+                            <div class="progress" style="width:75%;">
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <i class="devicon-react-original"></i>React
+                        <div class="progress_container">
+                            <div class="progress" style="width:75%;">
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <i class="devicon-jquery-plain"></i>JQuery
+                        <div class="progress_container">
+                            <div class="progress" style="width:75%;">
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <img src="img/icons/redux.png" class="icon" alt="redux icon" />Redux
+                        <div class="progress_container">
+                            <div class="progress" style="width:60%;">
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <i class="devicon-android-plain"></i>Android SDK
+                        <div class="progress_container">
+                            <div class="progress" style="width:50%;">
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <i class="devicon-dot-net-plain"></i>.NET
+                        <div class="progress_container">
+                            <div class="progress" style="width:40%;">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="section">
+                <h3>Tools</h3>
+                <div class="section_content_padding">
+                    <div>
+                        <img src="img/icons/eclipse.png" class="icon" alt="eclipse icon" />Eclipse
+                        <div class="progress_container">
+                            <div class="progress" style="width:85%;">
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <i class="icon-maven"></i>Maven
+                        <div class="progress_container">
+                            <div class="progress" style="width:75%;">
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <i class="icon-mssql"></i>Microsoft SQL Server
+                        <div class="progress_container">
+                            <div class="progress" style="width:75%;">
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <i class="devicon-visualstudio-plain"></i>TFS
+                        <div class="progress_container">
+                            <div class="progress" style="width:70%;">
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <i class="devicon-atom-original"></i>Atom
+                        <div class="progress_container">
+                            <div class="progress" style="width:65%;">
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <i class="devicon-mysql-plain"></i>MySQL
+                        <div class="progress_container">
+                            <div class="progress" style="width:65%;">
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <i class="devicon-github-plain"></i>Github
+                        <div class="progress_container">
+                            <div class="progress" style="width:55%;">
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <i class="icon-aws"></i>aws
+                        <div class="progress_container">
+                            <div class="progress" style="width:25%;">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <div class="footer_container">
+            <a href="http://www.linkedin.com/in/ramsay-shiells" target="_blank">
+                find me on <img src="img/icons/In-2C-28px-TM.png" class="linkedin_logo" alt="linkedin logo">
+                </a>
+            <span class="copyright">&copy; Ramsay Shiells 2017</span>
+
+        </div>
+    </div>
+
+    <form method="get" action="resources/Ramsay_Shiells_CV.pdf" target="_blank">
+        <button id="download_button" title="Download"><i class="material-icons md-light" style="padding:0px;vertical-align: middle;">file_download</i></button>
+    </form>
+    <button onclick="topFunction(500)" id="toTopButton" title="Go to top" class="toTopButton"><i class="material-icons md-light" style="padding:0px;vertical-align: middle;">keyboard_arrow_up</i></button>
+
+</body>
+
+</html>
